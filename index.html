@@ -89,26 +89,27 @@ button {
 </div>
 
 <div class="snacks">
-  <<img src="chip-bag.png" alt="Potato Chip Bag" width="150">
-    div class="snack" draggable="true" data-name="Chips" data-price="1.99">
-    <img src="https://via.placeholder.com/100?text=Chips">
+
+  <div class="snack" draggable="true" data-name="Chips" data-price="1.99">
+    <img src="chip-bag.png" alt="Potato Chips">
     <p>Chips<br>$1.99</p>
   </div>
 
   <div class="snack" draggable="true" data-name="Cookies" data-price="2.49">
-    <img src="https://via.placeholder.com/100?text=Cookies">
+    <img src="cookie.png" alt="Cookies">
     <p>Cookies<br>$2.49</p>
   </div>
 
   <div class="snack" draggable="true" data-name="Fruit Snacks" data-price="1.79">
-    <img src="https://via.placeholder.com/100?text=Fruit">
+    <img src="fruit-snacks.png" alt="Fruit Snacks">
     <p>Fruit Snacks<br>$1.79</p>
   </div>
 
   <div class="snack" draggable="true" data-name="Granola Bar" data-price="2.29">
-    <img src="https://via.placeholder.com/100?text=Granola">
+    <img src="granola-bar.png" alt="Granola Bar">
     <p>Granola Bar<br>$2.29</p>
   </div>
+
 </div>
 
 <div class="cart" id="cart">
@@ -121,6 +122,7 @@ button {
 
 <script>
 const snacks = document.querySelectorAll('.snack');
+const cart = document.getElementById('cart');
 const cartItems = document.getElementById('cartItems');
 const totalEl = document.getElementById('total');
 const notice = document.getElementById('notice');
